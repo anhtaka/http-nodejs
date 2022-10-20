@@ -3,7 +3,7 @@
 const express = require('express');
 // Constants
 const PORT = process.env.PORT;
-const HOST = '0.0.0.0';
+const HOST = process.env.HOST;
 // App
 const app = express();
 app.get('/', (req, res) => {
