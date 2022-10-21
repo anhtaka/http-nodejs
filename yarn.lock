@@ -305,6 +305,11 @@
     "filelist" "^1.0.1"
     "minimatch" "^3.0.4"
 
+"japanese-holidays@^1.0.10":
+  "integrity" "sha512-OiK5801c432ljumKnQ65TGw6HSEuetU0Fvlz1/BPPPqwxQZ2kPeCy3XHO6q5nf+6zJqIf1fqcpQjWp+/SimO6Q=="
+  "resolved" "https://registry.npmjs.org/japanese-holidays/-/japanese-holidays-1.0.10.tgz"
+  "version" "1.0.10"
+
 "media-typer@0.3.0":
   "integrity" "sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ=="
   "resolved" "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz"

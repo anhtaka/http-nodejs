@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();
+const JapHolidays = require('japanese-holidays');
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -29,6 +30,13 @@ app.get('/env', (req, res) => {
 app.get('/index', (req, res) => {
   res.render('index.ejs');
 });
+// Holiday
+app.get('/hd', (req, res) => {
+  var today = new Date();
+  var holidays = JapHolidays.getHolidaysOf( today.getFullYear() );
+  return res.json(holidays);
+});
+
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "ejs": "^3.1.8",
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "japanese-holidays": "^1.0.10"
   }
 }
