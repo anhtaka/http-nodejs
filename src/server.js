@@ -30,22 +30,22 @@ app.get('/env', (req, res) => {
 app.get('/index', (req, res) => {
   res.render('index.ejs');
 });
+
+
 // Holiday
+const newItems = [];
 app.get('/hd', (req, res) => {
   var today = new Date();
   var holidays = JapHolidays.getHolidaysOf( today.getFullYear() );
-/*  holidays.forEach(function(holiday) {
-    console.log(
-        today.getFullYear() + "年" +
-        holiday.month + "月" + 
-        holiday.date + "日は " +
-        holiday.name + " です"
-    );
+  holidays.forEach(function(holiday) {
+    newItems.push({
+        DATA: today.getFullYear() + "-" + holiday.month + "-" + holiday.date 
+      });
   });
-*/
+
 
   //const str2 = JSON.stringify(holidays,null,2)
-  return res.json(holidays);
+  return res.json(newItems);
   //res.send(str2);
 });
 
