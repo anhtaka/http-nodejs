@@ -33,8 +33,9 @@ app.get('/index', (req, res) => {
 
 
 // Holiday
-const newItems = [];
+
 app.get('/hd', (req, res) => {
+  const newItems = [];
   var today = new Date();
   var holidays = JapHolidays.getHolidaysOf( today.getFullYear() );
   holidays.forEach(function(holiday) {
