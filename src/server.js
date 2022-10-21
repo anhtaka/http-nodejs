@@ -44,8 +44,8 @@ app.get('/hd', (req, res) => {
   });
 */
 
-  const str2 = JSON.stringify(holidays,null,2)
-  return res.json(str2);
+  //const str2 = JSON.stringify(holidays,null,2)
+  return res.json(holidays);
   //res.send(str2);
 });
 
