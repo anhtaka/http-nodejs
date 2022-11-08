@@ -9,8 +9,10 @@ router.get('/', function(req, res, next) {
   var today = new Date();
   var holidays = JapHolidays.getHolidaysOf( today.getFullYear() );
   holidays.forEach(function(holiday) {
+    var m = "00" + holiday.month;
+    var d = "00" + holiday.date
     newItems.push({
-        DATA: today.getFullYear() + "-" + holiday.month + "-" + holiday.date 
+        DATA: today.getFullYear() + "-" + m.substring(m.length -2) + "-" + d.substring(d.length-2)
       });
   });
   return res.json(newItems);
