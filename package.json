@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node ./bin/www",
+    "start2": "node src/server.js",
     "dev": "nodemon -L ./bin/www"
   },
   "dependencies": {
