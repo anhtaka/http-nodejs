@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+      <a class="header-logo"></a>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1><%= title %></h1>
+     
+      </div>
+      <div class="index-table-wrapper">
+        <div class="table-head">
+          <span>日付</span>
+          <span>日付1</span>
+        </div>
+        <!-- EJSを用いてitemを定義してください -->
+        <ul class="table-body"></ul>
+<% datas.forEach((data)=> { %>
+          <li>
+            <div>
+            <span><%= data.DATA %></span>
+            <span><%= data.DATA2 %></span>
+            </div>
+          </li>
+<% }) %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
